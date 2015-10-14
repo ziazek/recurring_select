@@ -61,6 +61,7 @@ window.RecurringSelectDialog =
       return if !@current_rule.str?
       @outer_holder.remove()
       @recurring_selector.recurring_select('save', @current_rule)
+      @recurring_selector.trigger('change')
 
 # ========================= Init Methods ===============================
 
